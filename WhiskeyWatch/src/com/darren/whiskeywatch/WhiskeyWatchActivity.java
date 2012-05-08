@@ -21,6 +21,7 @@ public class WhiskeyWatchActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Set up the initial view from layout resources (/res/layout/main.xml)
         setContentView(R.layout.main);
         WebView myWebView = (WebView) findViewById(R.id.webView1);
         myWebView.loadUrl("http://m.whiskeymilitia.com");
@@ -31,7 +32,7 @@ public class WhiskeyWatchActivity extends Activity {
 
         	@Override
             public void onClick(View v) {
-            	// When clicked, show a toast with the TextView text
+            	// When clicked, show a toast with the text printed on the button
             	Toast.makeText(getApplicationContext(), ((TextView) v).getText(), Toast.LENGTH_SHORT).show();
             };
         });
@@ -47,13 +48,15 @@ public boolean onOptionsItemSelected(MenuItem item) {
     // Handle item selection
     switch (item.getItemId()) {
         case R.id.menu_add:
+        	// Not set up yet
             return true;
         case R.id.menu_settings:
-//        	setContentView(R.layout.settings);
+        	// Call the intent to show the Settings page (not fully set up yet)
         	Intent myIntent = new Intent(WhiskeyWatchActivity.this, SettingsListView.class);
         	WhiskeyWatchActivity.this.startActivity(myIntent);
-            return true;
+            //return true;
         case R.id.menu_help:
+        	// Not set up yet
             return true;
         default:
             return super.onOptionsItemSelected(item);
