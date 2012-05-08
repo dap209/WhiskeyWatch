@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;IconPackdpodolak/src/com/yourname&apos; to &apos;dpodolak&apos;" description="Rename resource &apos;yourname&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/yourname" name="dpodolak" stamp="1326150070299" updateReferences="true"/>
+</session>

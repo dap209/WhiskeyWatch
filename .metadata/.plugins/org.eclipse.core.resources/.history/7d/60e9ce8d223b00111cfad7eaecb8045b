@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="theme_iconpack" translatable="false">
+		<item>com_android_browser_browseractivity</item>
+		<item>com_google_android_gm</item>
+	</string-array>
+
+</resources>

@@ -1,0 +1,31 @@
+package testpkg;
+
+import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.jsoup.Jsoup;
+
+public class testclas2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		try {
+			String document = (Jsoup.connect("http://www.whiskeymilitia.com").get().toString());
+			Pattern p = Pattern.compile(".*\\d.*", Pattern.CASE_INSENSITIVE);
+			Matcher m = p.matcher("abc4dsa");
+			int b = m.end();
+			
+			String WMTimer = m.toString();
+//			System.out.println(document);
+			System.out.println(b);
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

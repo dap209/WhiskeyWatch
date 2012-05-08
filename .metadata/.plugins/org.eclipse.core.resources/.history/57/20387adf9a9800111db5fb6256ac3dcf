@@ -1,0 +1,5 @@
+package com.darren.whiskeywatcher;
+
+public class SettingsListView {
+
+}

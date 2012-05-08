@@ -1,0 +1,25 @@
+package testpkg;
+
+public class testclas2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		try {
+			String document = (Jsoup.connect("http://www.whiskeymilitia.com").get().toString());
+			Pattern p = Pattern.compile(".*WMTimer.*");
+			Matcher m = p.matcher(document);
+			int b = m.end();
+			
+			String WMTimer = m.toString();
+//			System.out.println(document);
+			System.out.println(b);
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
