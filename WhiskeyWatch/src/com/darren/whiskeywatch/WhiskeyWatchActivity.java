@@ -12,6 +12,7 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import com.darren.whiskeywatch.SettingsListView;
 
@@ -29,14 +30,30 @@ public class WhiskeyWatchActivity extends Activity {
         // Capture our button from layout
         Button button = (Button)findViewById(R.id.button1);
         button.setOnClickListener(new OnClickListener() {
-
         	@Override
             public void onClick(View v) {
             	// When clicked, show a toast with the text printed on the button
             	Toast.makeText(getApplicationContext(), ((TextView) v).getText(), Toast.LENGTH_SHORT).show();
             };
         });
+        
+        final ToggleButton tb = (ToggleButton)findViewById(R.id.toggleButton1);
+        tb.setOnClickListener(new OnClickListener() {
+        	@Override
+        	public void onClick(View v) {
+        		
+        		if (tb.isChecked()){
+        			Intent intent = new Intent(WhiskeyWatchActivity.this, DownloaderService.class);
+        			startService(intent);
+        			//Toast.makeText(getApplicationContext(), "service started", Toast.LENGTH_SHORT).show();
+        		} else {
+        			Intent intent = new Intent(WhiskeyWatchActivity.this, DownloaderService.class);
+        			stopService(intent);
+        		}
+        	}
+        });
     }
+    
 
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {

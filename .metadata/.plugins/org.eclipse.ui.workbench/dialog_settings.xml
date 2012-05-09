@@ -12,13 +12,14 @@
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
-		<item value="0" key="DIALOG_X_ORIGIN"/>
+		<item value="7" key="DIALOG_X_ORIGIN"/>
 	</section>
-	<section name="NewWizardAction">
-		<item value="com.android.ide.eclipse.adt.project.NewProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
-		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="com.android.ide.eclipse.wizards.category"/>
-		</list>
+	<section name="InstallationDialogSettings">
+		<item value="800" key="DIALOG_WIDTH"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="766" key="DIALOG_HEIGHT"/>
+		<item value="2" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="ZipFileImportWizard">
 		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
@@ -26,12 +27,11 @@
 			<item value="/media/files/eclipsework/jsoup-1.6.2.jar"/>
 		</list>
 	</section>
-	<section name="InstallationDialogSettings">
-		<item value="800" key="DIALOG_WIDTH"/>
-		<item value="0" key="DIALOG_Y_ORIGIN"/>
-		<item value="2" key="DIALOG_X_ORIGIN"/>
-		<item value="766" key="DIALOG_HEIGHT"/>
-		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	<section name="NewWizardAction">
+		<item value="com.android.ide.eclipse.adt.project.NewProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.android.ide.eclipse.wizards.category"/>
+		</list>
 	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.ui.wizards.import.ZipFile" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
